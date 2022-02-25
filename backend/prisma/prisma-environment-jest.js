@@ -21,7 +21,6 @@ class CustomEnvironment extends NodeEnvironment {
   setup() {
     process.env.DATABASE_URL = this.connectionString;
     this.global.process.env.DATABASE_URL = this.connectionString;
-
     execSync(`${prismaCli} migrate dev`);
   }
 
@@ -32,11 +31,8 @@ class CustomEnvironment extends NodeEnvironment {
       password: process.env.MYSQL_PASSWORD,
       database: this.schema,
     });
-
     conn.query("DROP DATABASE " + "`" + this.schema + "`");
-    // conn.query(`DROP DATABASE ${this.schema}`);
     conn.end();
-    // execSync(`${prismaCli} migrate reset --force`);
   }
 }
 

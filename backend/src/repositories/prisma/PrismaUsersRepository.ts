@@ -11,12 +11,10 @@ class PrismaUsersRepository implements IUsersRepositories {
             }
         })
 
-
         return !!user;
     }
 
     async create({username, email, name} : User): Promise<User> {
-        console.log(username, email, name)
         const user = await prisma.user.create({
             data: {
                 username,
@@ -24,7 +22,7 @@ class PrismaUsersRepository implements IUsersRepositories {
                 name
             }
         })
-
+        
         return user;
     }
 }
