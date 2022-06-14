@@ -1,0 +1,58 @@
+Arguments: 
+  /home/dilis/.nvm/versions/node/v17.5.0/bin/node /home/dilis/.nvm/versions/node/v17.5.0/bin/yarn
+
+PATH: 
+  /home/dilis/.sdkman/candidates/springboot/current/bin:/home/dilis/.nvm/versions/node/v17.5.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Python310/Scripts/:/mnt/c/Python310/:/mnt/c/Program Files (x86)/Eclipse Adoptium/jdk-8.0.312.7-hotspot/bin:/mnt/c/Program Files/Eclipse Adoptium/jre-8.0.322.6-hotspot/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/wamp6/bin/php/php8.1.0:/mnt/c/Users/dilis/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/ProgramData/ComposerSetup/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/dilis/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/dilis/AppData/Roaming/npm:/mnt/c/Users/dilis/AppData/Local/Programs/Hyper/resources/bin:/mnt/c/Program Files/JetBrains/PhpStorm 2021.3.2/bin:/mnt/c/Users/dilis/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Users/dilis/AppData/Roaming/Composer/vendor/bin:/mnt/c/Program Files/heroku/bin:/snap/bin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  17.5.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: connect ECONNREFUSED 2606:4700::6810:1423:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1157:16)
+
+npm manifest: 
+  {
+    "name": "typescript-init",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "dev:server": "ts-node-dev --respawn --transpile-only src/index.ts",
+      "test": "jest"
+    },
+    "dependencies": {
+      "cors": "^2.8.5",
+      "dotenv": "^16.0.1",
+      "dotenv-cli": "^5.1.0",
+      "express": "^4.18.1",
+      "express-async-errors": "^3.1.1",
+      "mysql2": "^2.3.3"
+    },
+    "devDependencies": {
+      "@types/cors": "^2.8.12",
+      "@types/express": "^4.17.13",
+      "@types/jest": "^27.5.1",
+      "@types/supertest": "^2.0.12",
+      "@types/uuid": "^8.3.4",
+      "jest": "^28.1.0",
+      "prisma": "^3.14.0",
+      "supertest": "^6.2.3",
+      "ts-jest": "^28.0.2",
+      "ts-node-dev": "^1.1.8",
+      "typescript": "^4.6.4",
+      "uuid": "^8.3.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
